@@ -1,0 +1,388 @@
+<!-- Manhattan Security Gap Scorecard — Static + Authority Amplifiers + Icons -->
+<section class="msg-authority" style="--fg:#0f172a;--muted:#475569;--line:#e2e8f0;--accent:#0ea5e9;--emerald:#10b981;--red:#ef4444;--yellow:#f59e0b;--ink:#111827;--bg:#ffffff;font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;color:var(--fg);max-width:980px;margin:0 auto;padding:20px;background:var(--bg)">
+
+  <!-- Inline SVG icon set -->
+  <svg width="0" height="0" style="position:absolute"><defs>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <rect x="3" y="10" width="18" height="11" rx="2" stroke-width="1.6"></rect>
+      <path d="M7 10V7a5 5 0 0 1 10 0v3" stroke-width="1.6"></path>
+    </symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <rect x="3" y="2" width="18" height="20" rx="2" stroke-width="1.6"></rect>
+      <path d="M8 6h8M9 10h6M7 16h10" stroke-width="1.6"></path>
+      <circle cx="12" cy="13" r="1" fill="currentColor"></circle>
+    </symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <path d="M3 7h4l2-2h6l2 2h4v12H3z" stroke-width="1.6"></path>
+      <circle cx="12" cy="13" r="4" stroke-width="1.6"></circle>
+    </symbol>
+    <symbol id="i-siren" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <rect x="6" y="7" width="12" height="11" rx="2" stroke-width="1.6"></rect>
+      <path d="M12 3v2M5 5l1.5 1.5M19 5L17.5 6.5" stroke-width="1.6"></path>
+    </symbol>
+    <symbol id="i-guard" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <circle cx="12" cy="7" r="3" stroke-width="1.6"></circle>
+      <path d="M4 20a8 8 0 0 1 16 0" stroke-width="1.6"></path>
+      <path d="M9 4l3-2 3 2" stroke-width="1.6"></path>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <path d="M20 6L9 17l-5-5" stroke-width="2"></path>
+    </symbol>
+  </defs></svg>
+
+  <style>
+    .msg-authority h1,.msg-authority h2,.msg-authority h3{line-height:1.25;margin:0 0 8px}
+    .msg-authority h1{font-size:28px;font-weight:800}
+    .msg-authority h2{font-size:20px;font-weight:800;margin-top:10px}
+    .msg-authority h3{font-size:18px;font-weight:800;margin-top:8px}
+    .msg-authority .muted{color:var(--muted)}
+    .msg-authority .hr{border:0;border-top:1px solid var(--line);margin:20px 0}
+    .msg-authority .band{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .msg-authority .pill{display:inline-block;padding:4px 10px;border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--muted)}
+    .msg-authority .scorebands{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0}
+    .msg-authority .scorebands div{border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:14px}
+    .msg-authority .crit{background:#fff1f2;border-color:#fecdd3}
+    .msg-authority .mod{background:#fffbeb;border-color:#fde68a}
+    .msg-authority .strong{background:#ecfdf5;border-color:#a7f3d0}
+    .msg-authority .gap{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}
+    .msg-authority .gap-head{display:flex;gap:10px;align-items:center}
+    .msg-authority .gap-head svg{width:22px;height:22px;color:#0b1220}
+    .msg-authority ul{margin:6px 0 10px 20px}
+    .msg-authority li{margin:4px 0}
+    .msg-authority .map{display:block;margin:6px 0 0 0;font-size:14px;color:var(--muted)}
+    .msg-authority .map b{color:#111}
+    .msg-authority .template{border:1px solid var(--line);border-radius:12px;padding:12px;background:#f8fafc}
+    .msg-authority .cta{background:#f1f5f9;border:1px solid var(--line);border-radius:14px;padding:16px}
+    .msg-authority .btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:10px 14px;border-radius:12px;font-weight:700}
+    .msg-authority .proof{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+    .msg-authority .proof .tag{border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted)}
+  </style>
+
+  <!-- HERO -->
+  <h1>Manhattan Commercial Security Gap Scorecard <span style="font-size:16px;color:var(--muted)">(3-min self-audit)</span></h1>
+  <p class="muted">Find the 5 hidden gaps causing after-hours breaches, visitor leaks, and slow emergency response—then get the exact steps to fix them fast.</p>
+  <p class="muted" style="font-size:13px">Built specifically for Manhattan office, mixed-use, and commercial properties.</p>
+
+  <div class="hr"></div>
+
+  <!-- HOW TO + VISUAL SCORE BANDS -->
+  <h2>How to use this scorecard</h2>
+  <ol class="muted" style="margin:0 0 12px 20px">
+    <li>Mark <strong>Yes</strong> or <strong>No</strong> for each check.</li>
+    <li>Score <strong>1 point per “Yes”</strong>. Max 10.</li>
+    <li>Review each question below and apply the matching fixes.</li>
+  </ol>
+  <div class="scorebands">
+    <div class="crit"><strong style="color:var(--red)">0–3 Critical Risk</strong><br><span class="muted">Multiple after-hours exposures likely. Fix within 48 hours.</span></div>
+    <div class="mod"><strong style="color:#a16207">4–7 Moderate</strong><br><span class="muted">Core controls exist, but gaps remain. Prioritize failed checks.</span></div>
+    <div class="strong"><strong style="color:var(--emerald)">8–10 Strong</strong><br><span class="muted">Solid fundamentals. Maintain cadence and tighten exceptions.</span></div>
+  </div>
+
+  <div class="hr"></div>
+
+  <!-- PROOF / AUTHORITY (non-numerical to avoid claims; swap with a sourced stat if you want) -->
+  <h2>Local context that matters</h2>
+  <p class="muted" style="margin-top:4px">
+    After 6 PM is when most exposures surface in hybrid buildings—elevators bypass lobbies, contractors arrive, and monitoring is thinnest.
+  </p>
+
+  <div class="hr"></div>
+
+  <!-- THE 10 CHECKS with ICONS + GAP→PROTOCOL MAPPING -->
+  <h2>The 10 Yes/No Checks (grouped by 5 gaps)</h2>
+
+  <!-- 1) After-Hours Access -->
+  <div class="gap">
+    <div class="gap-head"><svg><use href="#i-lock"/></svg><h3>After-Hours Access Control</h3></div>
+    <ul>
+      <li>☐ Are elevator/floor restrictions automatically enforced after 6 PM (card or PIN), including freight/service?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>Elevator Access Configuration Checklist</em></span>
+      </li>
+      <li>☐ Have you completed a Monthly Access Audit in the last 30 days and revoked all stale credentials?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>Monthly Access Audit Template</em></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 2) Visitor Management -->
+  <div class="gap" style="margin-top:12px">
+    <div class="gap-head"><svg><use href="#i-badge"/></svg><h3>Visitor Management</h3></div>
+    <ul>
+      <li>☐ Is pre-registration required after 6 PM with government ID capture and host approval prior to entry?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>After-Hours Visitor SOP</em></span>
+      </li>
+      <li>☐ Are visitor egress logs matched to ingress every day (no unclosed visits after-hours)?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>Visitor Lifecycle Reconciliation Log</em></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 3) Tech + Human Oversight -->
+  <div class="gap" style="margin-top:12px">
+    <div class="gap-head"><svg><use href="#i-camera"/></svg><h3>Tech + Human Oversight</h3></div>
+    <ul>
+      <li>☐ Do all entry/egress points have camera coverage with &gt;30 days retention and live monitoring after 6 PM?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>Camera Coverage QA Checklist</em> + <em>Live Monitoring Playbook</em></span>
+      </li>
+      <li>☐ Are exception reports (forced/held-open doors, tailgating alerts) auto-generated and reviewed each shift?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>Exception Analytics Runbook</em></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 4) Emergency Coordination -->
+  <div class="gap" style="margin-top:12px">
+    <div class="gap-head"><svg><use href="#i-siren"/></svg><h3>Emergency Coordination</h3></div>
+    <ul>
+      <li>☐ Is a current (≤90 days) Contact Tree maintained with primary + backup contacts (PM lead, vendor, FDNY/NYPD, tenant reps)?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>Emergency Contact Tree</em></span>
+      </li>
+      <li>☐ Have you run a micro-drill in the last 60 days (fire, medical, intrusion) with documented lessons learned?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>Micro-Drill Cadence + Tracker</em></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 5) Guard Coverage & Training -->
+  <div class="gap" style="margin-top:12px">
+    <div class="gap-head"><svg><use href="#i-guard"/></svg><h3>Guard Coverage &amp; Training</h3></div>
+    <ul>
+      <li>☐ Is there a written backup coverage policy guaranteeing ≥2 guards after 6 PM with clear escalation paths?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>Backup Coverage Policy Rubric</em></span>
+      </li>
+      <li>☐ Have all guards been briefed this quarter on the After-Hours Escort SOP with sign-off and spot checks?
+        <span class="map"><b>If NO ⇒</b> Fix with: <em>After-Hours Escort SOP</em></span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="hr"></div>
+
+<!-- 48-Hour Gap Plug Plan — Exact Protocols (Expanded) -->
+<h2>48-Hour Gap Plug Plan — Exact Protocols</h2>
+
+<style>
+  /* small add-ons for richer layout (scoped to .msg-authority) */
+  .msg-authority .proto-grid{display:grid;gap:12px}
+  .msg-authority .proto-card{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff}
+  .msg-authority .proto-head{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  .msg-authority .proto-head svg{width:22px;height:22px;color:#0b1220}
+  .msg-authority .meta{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 8px}
+  .msg-authority .meta .tag{border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted);background:#f8fafc}
+  .msg-authority .label{font-size:13px;color:var(--muted);margin-bottom:6px}
+  .msg-authority .steps{margin:6px 0 0 20px}
+  .msg-authority .why{background:#f8fafc;border:1px dashed var(--line);border-radius:12px;padding:10px;margin-top:10px;color:var(--muted);font-size:14px}
+</style>
+
+<div class="proto-grid">
+
+  <!-- Monthly Access Audit Template -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-lock"/></svg><h3 style="margin:0">Monthly Access Audit Template</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Property Manager + Security Supervisor</span>
+      <span class="tag"><strong>Timeline:</strong> Day 1 export → Day 2 revoke & file</span>
+      <span class="tag"><strong>Evidence:</strong> Signed audit log + revocation report</span>
+    </div>
+    <div class="label">Steps (do this within 48 hours):</div>
+    <ol class="steps">
+      <li>Export 30-day badgeholder & door activity from ACS + visitor system.</li>
+      <li>Cross-match with HR roster & vendor contracts; flag inactive/expired/unknown.</li>
+      <li>Immediately suspend stale credentials; notify tenant admins.</li>
+      <li>Issue a “Cards Reviewed / Revoked / Exceptions” report; PM signs off and files.</li>
+    </ol>
+    <div class="why"><strong>Why (Manhattan):</strong> Stale contractor cards are a common after-hours breach path in mixed-use towers; revocations close the fastest risk.</div>
+  </article>
+
+  <!-- Elevator Access Configuration Checklist -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-lock"/></svg><h3 style="margin:0">Elevator Access Configuration Checklist</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Access Control Vendor Tech</span>
+      <span class="tag"><strong>Timeline:</strong> Within 24 hours of finding the gap</span>
+      <span class="tag"><strong>Evidence:</strong> Schedule screenshots + pass/fail test log</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Inventory all cabs (incl. freight/service) and restricted floors after 18:00.</li>
+      <li>Program controller schedules to deny non-authorized floors 18:00–06:00.</li>
+      <li>Test 3 random tenant cards + 1 vendor card after 20:00 on each cab.</li>
+      <li>Align lobby & freight rules; attach screenshots to the change record.</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Elevators bypass lobby screening; after-hours floor locks stop tailgating at the source.</div>
+  </article>
+
+  <!-- After-Hours Visitor SOP -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-badge"/></svg><h3 style="margin:0">After-Hours Visitor SOP</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Lobby Guard + PM Oversight</span>
+      <span class="tag"><strong>Timeline:</strong> Distribute same day; brief next shift</span>
+      <span class="tag"><strong>Evidence:</strong> SOP card posted; supervisor sign-off</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Require host pre-approval in VMS after 18:00; deny walk-ins.</li>
+      <li>Scan gov ID; match to pre-reg; log visitor photo where legal.</li>
+      <li>Issue time-boxed access; escort vendors per SOP; log exit at egress.</li>
+      <li>Nightly reconcile open visits; escalate mismatches to PM.</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Most “quiet” violations are unclosed visits; strict lifecycle control kills that risk.</div>
+  </article>
+
+  <!-- Visitor Lifecycle Reconciliation Log -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-badge"/></svg><h3 style="margin:0">Visitor Lifecycle Reconciliation Log</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Night Shift Supervisor</span>
+      <span class="tag"><strong>Timeline:</strong> Daily 07:00 handover</span>
+      <span class="tag"><strong>Evidence:</strong> Signed reconciliation sheet</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Pull “after-hours visitor” report for prior night.</li>
+      <li>Compare entries vs. exits; list all open visits.</li>
+      <li>Contact hosts; close or escalate outstanding records within 24h.</li>
+      <li>Log root-causes (host missed, badge issue, SOP gap) and corrective action.</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Open visits create liability and mask tailgating; a daily closeout is a Manhattan must-do.</div>
+  </article>
+
+  <!-- Camera Coverage QA Checklist -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-camera"/></svg><h3 style="margin:0">Camera Coverage QA Checklist</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Guard Supervisor + Camera Vendor</span>
+      <span class="tag"><strong>Timeline:</strong> Night walk within 48h</span>
+      <span class="tag"><strong>Evidence:</strong> QA sheet + screenshots + work orders</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Night-walk all ingress/egress, docks, garages, roof access; verify angles & illumination.</li>
+      <li>Check NVR retention (goal ≥30 days; align with policy/regulations).</li>
+      <li>Capture “before” screenshots; open tickets for blind spots/failures.</li>
+      <li>Retest and attach “after” evidence once fixed.</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Clear night footage speeds incident resolution; blind spots are exploited after 6 PM.</div>
+  </article>
+
+  <!-- Exception Analytics Runbook -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-camera"/></svg><h3 style="margin:0">Exception Analytics Runbook</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Security IT / ACS Admin</span>
+      <span class="tag"><strong>Timeline:</strong> Enable within 24h; review every shift</span>
+      <span class="tag"><strong>Evidence:</strong> Shift report with incidents & actions</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Enable alerts for forced/held-open doors and tailgating in ACS/VMS.</li>
+      <li>Schedule email reports to the shift inbox at 06:00 & 18:00.</li>
+      <li>Supervisors review, open tickets for repeats, and log actions.</li>
+      <li>Weekly trend review with PM; escalate chronic problem doors.</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Analytics surface silent failures (stuck magnets, propped doors) that guards miss on rounds.</div>
+  </article>
+
+  <!-- Live Monitoring Playbook -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-camera"/></svg><h3 style="margin:0">Live Monitoring Playbook (After 18:00)</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Guard Shift Supervisor</span>
+      <span class="tag"><strong>Timeline:</strong> Roll out next after-hours shift</span>
+      <span class="tag"><strong>Evidence:</strong> Hourly initials on monitoring checklist</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Assign posts to specific feeds (entry/egress, freight, roof access).</li>
+      <li>Define 2-minute screen scan cadence; prioritize exception alerts.</li>
+      <li>Escalate incidents within 3 minutes to supervisor + PM.</li>
+      <li>Log events with clip references (timestamp/channel).</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Human confirmation + crisp escalation beat automated alerts alone in Manhattan’s mixed-use patterns.</div>
+  </article>
+
+  <!-- Emergency Contact Tree -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-siren"/></svg><h3 style="margin:0">Emergency Contact Tree</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> PM Admin</span>
+      <span class="tag"><strong>Timeline:</strong> Verify & redistribute within 48h</span>
+      <span class="tag"><strong>Evidence:</strong> Call-down log + laminated copies</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Collect primary + backup numbers for PM, vendor, FDNY/NYPD liaison, tenant safety reps.</li>
+      <li>Live-call each number to verify; note answer/voicemail/time.</li>
+      <li>Print laminated copies for lobby & command post; store digital master in shared drive.</li>
+      <li>Set 90-day reminder to re-verify.</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Failed numbers add minutes to response; verified backups keep momentum during incidents.</div>
+  </article>
+
+  <!-- Micro-Drill Cadence + Tracker -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-siren"/></svg><h3 style="margin:0">Micro-Drill Cadence + Tracker</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Guard Supervisor + PM Lead</span>
+      <span class="tag"><strong>Timeline:</strong> Run first drill within 48h; schedule monthly</span>
+      <span class="tag"><strong>Evidence:</strong> Drill log with timing & actions</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Pick scenario (fire/medical/intrusion) most relevant to your tenants.</li>
+      <li>Run 15-minute drill; time response to first action & full resolution.</li>
+      <li>Document friction points; assign owners & due dates.</li>
+      <li>Share outcomes with tenants’ life-safety reps if applicable.</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Frequent, small reps harden muscle memory; you fix real bottlenecks, not imaginary ones.</div>
+  </article>
+
+  <!-- Backup Coverage Policy Rubric -->
+  <article class="proto-card">
+    <div class="proto-head"><svg><use href="#i-guard"/></svg><h3 style="margin:0">Backup Coverage Policy Rubric</h3></div>
+    <div class="meta">
+      <span class="tag"><strong>Owner:</strong> Security Vendor Manager</span>
+      <span class="tag"><strong>Timeline:</strong> Draft policy in 48h; brief next shift</span>
+      <span class="tag"><strong>Evidence:</strong> Signed policy + guard acknowledgements</span>
+    </div>
+    <div class="label">Steps:</div>
+    <ol class="steps">
+      <li>Set a minimum 2-guard after-hours standard; define float coverage for breaks.</li>
+      <li>Maintain on-call roster with ≤30-minute arrival SLA; test monthly.</li>
+      <li>Run a quarterly surge stress test (e.g., fire alarm during VIP event).</li>
+      <li>Collect guard acknowledgements; store in personnel files.</li>
+    </ol>
+    <div class="why"><strong>Why:</strong> Incidents escalate when only one guard is on duty; redundancy + practiced handoffs prevent gaps.</div>
+  </article>
+
+</div>
+
+
+  <div class="hr"></div>
+
+  <!-- Implementation Gradient -->
+  <h2>Choose your path</h2>
+  <p class="muted" style="margin-top:6px">
+    Keep the free plan and run it with your team—everything you need is here. Or, if you’d rather have us handle it, we can map and start implementation in under two weeks.
+  </p>
+
+  <!-- Consult CTA -->
+  <div class="cta" style="margin-top:12px">
+    <h3 style="margin:0 0 6px">Book a Free 15-minute Manhattan Security Gap Consult (Normally $299)</h3>
+    <p class="muted" style="margin:6px 0">How it works:</p>
+    <ol class="muted" style="margin:6px 0 0 20px">
+      <li>Pick a time (NYC hours; same-week slots prioritized for Manhattan PMs).</li>
+      <li>Answer 3 setup questions (building type, top concern, desired outcome).</li>
+      <li>We review your checks and draft a 48-hour action path.</li>
+      <li>On the call: we walk the plan, give exact next steps, and estimate effort.</li>
+      <li>After: you’ll receive a written summary + the templates referenced.</li>
+    </ol>
+    <p style="margin:12px 0 0">
+      <a href="#" class="btn">📞 Book My 15-Minute Consult</a>
+      <span class="muted" style="margin-left:10px;font-size:13px">This month only: first 10 PMs get a free Gap Review call (Normally $299).</span>
+    </p>
+  </div>
+
+  <p class="muted" style="margin:14px 0 0;font-size:12px">We don’t spam. Unsubscribe anytime. Privacy respected.</p>
+</section>
