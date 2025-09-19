@@ -1,0 +1,41 @@
+Main CTA
+
+<style>
+  .mpm-cta-txt{
+    isolation:isolate;
+    border:2px solid #ff4d4d; border-radius:10px;
+    padding:12px 18px; background:#fff8f8;
+    text-align:center; box-sizing:border-box;
+  }
+  .mpm-cta-txt p{ margin:0; line-height:1.35; }
+  .mpm-cta-txt a{ color:inherit; text-decoration:underline; }
+  @media (max-width:640px){ .mpm-cta-txt{ padding:12px; } }
+</style>
+
+<div class="mpm-cta-txt" role="region" aria-label="Security scorecard CTA">
+  <p>🛡 Manhattan property managers: Score your building’s security in 3 minutes.</br>
+    <a href="https://contact.buildingsecurity.com/nyc-security-gap-scorecard">Click here to get your 48-Hour Security Gap Plan now ➜</a>
+  </p>
+</div>
+</br>
+
+====
+
+Footer CTA 
+
+<style>
+  .mpm-sticky-txt{
+    isolation:isolate;
+    position:fixed; left:0; bottom:0; width:100%;
+    background:#ff4d4d; color:#fff;
+    padding:10px 16px; padding-bottom:calc(10px + env(safe-area-inset-bottom));
+    text-align:center; z-index:9999; box-shadow:0 -2px 6px rgba(0,0,0,0.2);
+    box-sizing:border-box; line-height:1.35;
+  }
+  .mpm-sticky-txt a{ color:inherit !important; text-decoration:underline; }
+  @media (max-width:640px){ .mpm-sticky-txt{ font-size:14px; } }
+</style>
+
+<div class="mpm-sticky-txt" role="region" aria-label="Sticky security scorecard CTA">
+  🛡 Manhattan Property Managers: Score your building’s security in 3&nbsp;minutes.</br> <a href="https://contact.buildingsecurity.com/nyc-security-gap-scorecard">Click here to get your 48-Hour Security Gap Plan now ➜</a>
+</div>
